@@ -1,0 +1,93 @@
+// ========== 5.11. BEGIN HERO ========== //
+.hero {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+  width: 100%;
+  margin-top: -8px;
+  @include breakpoint(small) {
+    height: ($hero-height / 1.5);
+  }
+  @include breakpoint(medium) {
+    height: ($hero-height / 1.9);
+  }
+  @include breakpoint(large) {
+    height: $hero-height;
+  }
+
+  &__headline {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    @include breakpoint(small) {
+      font-size: rem-calc(20);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(46);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(76);
+    }
+  }
+
+  &__quote {
+    @include xy-grid;
+    @include xy-cell;
+    height: 100%;
+    @include flex-align(right, middle);
+  }
+
+  &__quote-text {
+    @include font-italic;
+    color: $light-gray;
+    border: none;
+    @include breakpoint(small) {
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(18);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(22);
+    }
+
+    &_color_medium-gray {
+      color: $medium-gray;
+    }
+
+    &_right {
+      text-align: right;
+    }
+  }
+
+  &__quote-signature {
+    color: $light-gray;
+    padding-top: rem-calc(5);
+    @include breakpoint(small) {
+      font-size: rem-calc(11);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(14);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(16);
+    }
+
+    &_color_medium-gray {
+      color: $medium-gray;
+    }
+  }
+}
+// ========== END HERO ========== //

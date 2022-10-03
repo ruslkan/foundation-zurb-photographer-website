@@ -1,0 +1,25 @@
+<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas
+	style="background-image: url({{root}}assets/images/offcanvas-bg.jpg)">
+	<button class="off-canvas__close-button" aria-label="Close menu" type="button" data-close>
+		<span aria-hidden="true"><i class="fa fa-times"></i></span>
+	</button>
+	<div class="off-canvas__container-inner">
+		<div class="off-canvas__logo">
+			<div class="logo__image-container">
+				<img src="{{root}}assets/images/logoGray_small.svg" alt="Фотограф Инга Заяц" class="logo__image" />
+			</div>
+		</div>
+
+		<!-- begin menu-main mobile -->
+		<nav class="off-canvas__menu-main menu-main">
+			<ul class="vertical menu menu-main__list off-canvas__menu-main-list" data-magellan>
+				{{> menu-main-link}}
+			</ul>
+		</nav>
+		<!-- end menu-main mobile -->
+
+		<!-- begin off-canvas social button -->
+		<div class="off-canvas__social-button">{{> social-button-off-canvas}}</div>
+		<!-- end off-canvas social button -->
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<section class="section section-portfolio" id="sectionPortfolio" data-magellan-target="sectionPortfolio">
+	<h3 class="section__headline section__headline_text_center">- Портфолио -</h3>
+	<div class="section__bg-image"
+		data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/portfolio/portfolio-bg.jpg, medium], [{{root}}assets/images/section/portfolio/portfolio-bg.jpg, large]">
+		<div class="section__card-container" data-equalizer data-equalize-by-row="true">
+			<!-- begin flip card -->
+			{{#repeat 5}}
+			<div class="section__card section__card_columns_three">
+				{{> flip-card}}
+			</div>
+			{{/repeat}}
+			<!-- end flip card -->
+		</div>
+	</div>
+</section>

@@ -1,0 +1,64 @@
+// ========== 5.17. BEGIN ABOUT ME SECTION ========== //
+.section-about-me {
+  &__headline {
+    background: none;
+  }
+
+  &__image {
+    @include badge;
+  }
+
+  &__quote {
+    font-style: italic;
+    border: none;
+
+    &_text_right {
+      text-align: right;
+    }
+  }
+
+  &__quote-content {
+    color: $white;
+    @include breakpoint(small) {
+      font-size: rem-calc(15);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(15);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(18);
+    }
+  }
+
+  &__quote-signature {
+    color: $white;
+    @include breakpoint(small) {
+      font-size: rem-calc(0.55rem);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(0.6rem);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(1rem);
+    }
+
+    &_text_right {
+      text-align: right;
+    }
+  }
+
+  &__introtext {
+    color: $medium-gray !important;
+    font-size: rem-calc(1.25rem);
+    @include breakpoint(small) {
+      padding: rem-calc(15);
+    }
+    @include breakpoint(medium) {
+      padding: rem-calc(20);
+    }
+    @include breakpoint(large) {
+      padding: rem-calc(50);
+    }
+  }
+}
+// ========== END ABOUT ME SECTION ========== //

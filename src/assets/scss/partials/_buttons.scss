@@ -1,0 +1,14 @@
+// ====== 5.4. BEGIN BUTTONS  ====== //
+.button {
+  @include button-style(#0a0a0a, #565555, #fefefe);
+  @include border-radius(5px);
+  border-style: solid;
+  border-width: 1px;
+  border-color: $white;
+  letter-spacing: 1.6px;
+
+  &:hover {
+    color: #d08905;
+  }
+}
+// ====== END BUTTONS  ====== //

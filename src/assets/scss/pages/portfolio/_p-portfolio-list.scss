@@ -1,0 +1,86 @@
+// ========== 6.7. BEGIN PORTFOLIO LIST PAGE  ========== //
+.portfolio-list {
+  &__portfolio-card {
+    @include xy-grid;
+    @include breakpoint(small) {
+      @include xy-cell($gutters: 0);
+    }
+    @include breakpoint(medium) {
+      @include xy-cell($gutters: 5px);
+    }
+    @include breakpoint(large) {
+      @include xy-cell($gutters: 6px);
+    }
+
+    hr {
+      border: 1px solid $medium-gray;
+    }
+  }
+}
+
+.portfolio-card {
+  &__image-container {
+    @include breakpoint(small) {
+      @include xy-cell(12, $gutters: 0);
+    }
+    @include breakpoint(medium) {
+      @include xy-cell(12, $gutters: 0);
+    }
+    @include breakpoint(large) {
+      @include xy-cell(6, $gutters: 0);
+    }
+  }
+
+  &__image {
+    @include flex-align(center, middle);
+    width: 100%;
+  }
+
+  &__content-block {
+    padding: 1rem;
+    @include breakpoint(small) {
+      @include xy-cell(12);
+      @include flex-order(2);
+    }
+    @include breakpoint(medium) {
+      @include xy-cell(12);
+      @include flex-order(2);
+    }
+    @include breakpoint(large) {
+      @include xy-cell(6);
+      @include flex-order(0);
+    }
+  }
+
+  &__headline {
+    @include breakpoint(small) {
+      font-size: rem-calc(1.5rem);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(1.65rem);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(1.8rem);
+    }
+
+    &_text {
+      &_center {
+        text-align: center;
+      }
+    }
+  }
+
+  &__introtext {
+    color: $black;
+    @include breakpoint(small) {
+      font-size: rem-calc(1rem);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(1rem);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(1.05rem);
+    }
+  }
+}
+// ========== END PORTFOLIO LIST PAGE ========== //

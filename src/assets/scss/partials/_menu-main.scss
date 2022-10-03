@@ -1,0 +1,60 @@
+// ========== 5.13. BEGIN MENU MAIN ========== //
+.menu {
+  a {
+    &:hover {
+      color: rgba(133, 130, 130, 1);
+    }
+    &:focus {
+      color: rgba(221, 145, 4, 0.95);
+    }
+  }
+}
+
+.menu-main {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: $main-menu-font-family;
+
+  &__link {
+    color: rgba(199, 195, 195, 0.95);
+    transition: color 0.15s ease-in;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    @include breakpoint(small) {
+      font-size: rem-calc(18);
+      letter-spacing: rem-calc(0.8);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(20);
+      letter-spacing: rem-calc(0.4);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(18);
+      letter-spacing: rem-calc(2);
+    }
+
+    &:hover {
+      color: rgba(133, 130, 130, 1);
+    }
+
+    &:active {
+      color: rgba(221, 145, 4, 0.95);
+    }
+
+    &:current {
+      color: rgba(221, 145, 4, 0.95);
+    }
+
+    &.is-active {
+      color: rgba(221, 145, 4, 0.95);
+      transition: width 0.3s ease-out;
+    }
+  }
+
+  &__icon {
+    @include hide-for(large);
+    margin-right: 0.5rem;
+  }
+}
+// ========== END MENU MAIN ========== //

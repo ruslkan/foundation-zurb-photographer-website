@@ -1,0 +1,81 @@
+// Start variables
+
+// fonts
+//$body-font-family: Avenir Next, SegoeUI, Franklin Gothic, arial, sans-serif;
+//$body-font-family: 'Open Sans',Arial,Helvetica,Verdana,sans-serif;
+$body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$main-menu-font-family: 'MillerDisplay', OpenSans, Roboto;
+
+// color
+$body-background: rgba(230, 230, 230, 1);
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+$gray: rgba(128, 128, 128, 1);
+$highlight: rgba(221, 145, 4, 0.95);
+$highlight-link: rgba(156, 62, 3, 1);
+$shadow: rgba(136, 136, 136, 1);
+$section-headline-container-background: rgba(22, 22, 22, 1);
+$input-placeholder-color: $black;
+$post-color: rgba(51, 51, 51, 1);
+$introtext-color: rgba(102, 102, 102, 1);
+
+// social buttons
+$social-button-size-small: 2rem;
+$social-button-size-large: 2.5rem;
+$social-button-border-width: 0.125rem;
+$social-button-font-size-small: 1rem;
+$social-button-font-size-large: 1.25rem;
+$social-button-line-height: 1.8em;
+$social-button-border-radius-round: 1.6875rem;
+$social-button-border-radius-square: 0.6875rem;
+$social-button-transition: all 0.5s ease;
+$social-button-margin: 0.25rem;
+$social-brand-facebook: rgba(59, 89, 152, 1);
+$social-brand-vk: rgba(69, 102, 142, 1);
+$social-brand-instagram: rgba(18, 86, 136, 1);
+$social-brand-youtube: rgba(187, 0, 0, 1);
+
+// buttons
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.65rem,
+  default: 0.75rem,
+  large: 0.85rem,
+) !default;
+
+// page about me
+$about-me-page-bg: $card-background;
+$about-me-page-text-color: $body-font-color;
+
+// blog page
+$article-title-case: uppercase;
+
+// blog page item article tag
+$tag-cloud-tag-color: $white;
+$tag-cloud-type-color: $light-gray;
+$tag-cloud-separator-color: $medium-gray;
+$tag-cloud-section-bg: lighten($tag-cloud-tag-color, 35%);
+$tag-cloud-section-width: 800px;
+
+// training page item
+$training-page-item-article-title: uppercase;
+
+// comments
+$comment-form-bg: $light-gray;
+$comment-section-bg: $white;
+$comment-section-padding: $global-padding;
+
+// pagination
+$pagination-primary-color: rgba(44, 56, 64, 1);
+$pagination-current-color: dodgerblue;
+$pagination-radius: 4px;
+
+// subscribe
+$subscription-headline-color: $white;
+$subscription-form-bg: darken($primary-color, 20%);
+$subscription-form-color: $white;
+$subscription-form-padding: rem-calc(16);
+
+// hero
+$hero-height: 50vh;
+// End variables

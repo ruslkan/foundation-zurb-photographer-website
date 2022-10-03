@@ -1,0 +1,166 @@
+// ====== 5.7. BEGIN COMMENTS  ====== //
+.comment {
+  &__inner {
+    @include xy-grid-container;
+    @include xy-gutters($gutters: 5rem, $gutter-position: top);
+  }
+
+  &__headline {
+    @include xy-gutters($gutter-position: top left bottom);
+    font-weight: 700;
+    line-height: 1.2;
+    @include breakpoint(small) {
+      font-size: rem-calc(14);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(18);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(22);
+    }
+  }
+
+  &__separator {
+    margin-top: rem-calc(60);
+  }
+
+  &__item {
+    @include xy-gutters($gutter-position: top bottom);
+    border-bottom: 2px solid $medium-gray;
+  }
+
+  &__avatar {
+    @include flex;
+  }
+
+  &__dialog {
+    @include breakpoint(small) {
+      @include xy-gutters(
+        $gutters: 5rem,
+        $gutter-type: padding,
+        $gutter-position: left
+      );
+    }
+    @include breakpoint(medium) {
+      @include xy-gutters(
+        $gutters: 7rem,
+        $gutter-type: padding,
+        $gutter-position: left
+      );
+    }
+    @include breakpoint(large) {
+      @include xy-gutters(
+        $gutters: 9rem,
+        $gutter-type: padding,
+        $gutter-position: left
+      );
+    }
+  }
+
+  &__metadata {
+    @include flex;
+    @include flex-align($x: right);
+    margin-top: rem-calc(5);
+    margin-bottom: rem-calc(5);
+    @include breakpoint(small) {
+      font-size: rem-calc(10);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(12);
+    }
+  }
+
+  &__published-date {
+    padding-right: rem-calc(5);
+  }
+
+  &__text-container {
+    margin-top: rem-calc(10);
+  }
+
+  &__text {
+    line-height: 1.625;
+    color: $post-color;
+    @include xy-cell;
+    @include breakpoint(small) {
+      font-size: rem-calc(14);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(16);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(16);
+    }
+  }
+
+  &__reply {
+    padding: 0.5rem;
+    @include breakpoint(small) {
+      font-size: rem-calc(14);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(16);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__reply-link {
+    color: $dark-gray;
+
+    &:hover {
+      color: $highlight;
+      -webkit-transition: color 0.3s ease-in;
+      transition: color 0.3s ease-in;
+    }
+  }
+
+  &__form {
+    padding: 2rem;
+    background: $light-gray;
+    @include breakpoint(small) {
+      @include xy-cell(
+        12,
+        $gutters: 1rem,
+        $gutter-type: margin,
+        $gutter-position: top bottom right left
+      );
+    }
+    @include breakpoint(medium) {
+      @include xy-cell(
+        12,
+        $gutters: 2rem,
+        $gutter-type: margin,
+        $gutter-position: top bottom right left
+      );
+    }
+    @include breakpoint(large) {
+      @include xy-cell(
+        10,
+        $gutters: 3rem,
+        $gutter-type: margin,
+        $gutter-position: top bottom right left
+      );
+    }
+  }
+
+  &__form-headline {
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: rem-calc(20);
+    @include breakpoint(small) {
+      font-size: rem-calc(14);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(18);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(22);
+    }
+  }
+}
+// ====== END COMMENTS  ====== //

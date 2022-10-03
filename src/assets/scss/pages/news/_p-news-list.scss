@@ -1,0 +1,37 @@
+// ========== 6.6. BEGIN NEWS LIST ========== //
+.news-list {
+  &__article {
+    margin-bottom: rem-calc(15);
+  }
+
+  &__article-header {
+    position: relative;
+  }
+
+  &__article-header-image {
+    @include breakpoint(small) {
+      padding-bottom: 55%;
+    }
+    @include breakpoint(medium) {
+      padding-bottom: 45%;
+    }
+    @include breakpoint(large) {
+      padding-bottom: 45%;
+    }
+  }
+
+  &__article-headline {
+    @include position($position: absolute, $top: 3);
+    @include xy-cell;
+  }
+
+  &__article-info {
+    @include xy-grid;
+    @include position($position: absolute, $left: 0, $right: 0, $bottom: 0);
+  }
+
+  &__published-date-published {
+    @include show-for($size: large);
+  }
+}
+// ========== END NEWS LIST ========== //

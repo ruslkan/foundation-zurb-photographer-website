@@ -1,0 +1,138 @@
+// ========== 5.16. BEGIN SECTION ========== //
+.section {
+  background-color: $black;
+  height: 100%;
+
+  &__bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+    background-color: $black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @supports (-webkit-overflow-scrolling: touch) {
+      background-attachment: scroll;
+    }
+
+    &:before {
+      content: '';
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  &__container {
+    @include xy-grid-container;
+    @include xy-grid;
+  }
+
+  &__block {
+    &_columns_four {
+      @include breakpoint(small) {
+        @include xy-cell(12, $gutters: 0);
+      }
+      @include breakpoint(medium) {
+        @include xy-cell(6, $gutters: 0);
+      }
+      @include breakpoint(large) {
+        @include xy-cell(4, $gutters: 0);
+      }
+    }
+
+    &_columns_eight {
+      @include breakpoint(small) {
+        @include xy-cell(12, $gutters: 0);
+      }
+      @include breakpoint(medium) {
+        @include xy-cell(6, $gutters: 0);
+      }
+      @include breakpoint(large) {
+        @include xy-cell(8, $gutters: 0);
+      }
+    }
+  }
+
+  &__card-container {
+    @include xy-grid-container;
+    @include xy-grid;
+    @include flex-align($x: center);
+  }
+
+  &__card {
+    @include xy-gutters($gutter-position: top);
+
+    &_columns_two {
+      @include breakpoint(small) {
+        @include xy-cell(12);
+      }
+      @include breakpoint(medium) {
+        @include xy-cell(6);
+      }
+      @include breakpoint(large) {
+        @include xy-cell(6);
+      }
+    }
+
+    &_columns_three {
+      @include xy-gutters($gutter-position: top);
+      @include breakpoint(small) {
+        @include xy-cell(12);
+      }
+      @include breakpoint(medium) {
+        @include xy-cell(4);
+      }
+      @include breakpoint(large) {
+        @include xy-cell(4);
+      }
+    }
+  }
+
+  &__headline {
+    font-family: 'Playball', 'RUSBrush-Script';
+    font-weight: 600;
+    line-height: 1.2;
+    color: $light-gray;
+    font-style: italic;
+    background: $black;
+    margin-bottom: 0;
+    @include breakpoint(small) {
+      font-size: rem-calc(1.75rem);
+      padding: 1.5rem 0;
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(2rem);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(4rem);
+      padding: 3.5rem 0;
+    }
+
+    &_text_center {
+      text-align: center;
+    }
+  }
+
+  &__introtext {
+    line-height: 1.625;
+    @include font-bold($weight: 600);
+    color: $introtext-color;
+  }
+
+  &__button {
+    @include xy-cell($gutter-position: top bottom);
+
+    &_position_right {
+      text-align: right;
+    }
+  }
+}
+// ========== END SECTION ========== //

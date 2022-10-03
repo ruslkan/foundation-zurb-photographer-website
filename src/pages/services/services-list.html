@@ -1,0 +1,26 @@
+---
+layout: internal
+title: Услуги - Фотограф Инга Заяц
+---
+
+<!-- begin hero -->
+<div
+	data-interchange="[{{root}}assets/images/services/hero-small.jpg, small], [{{root}}assets/images/services/hero-medium.jpg, medium], [{{root}}assets/images/services/hero-large.jpg, large]"
+	class="hero">
+	<div class="hero__headline">
+		<span>Мои услуги</span>
+	</div>
+</div>
+<!-- end hero -->
+
+<div class="page__separator"></div>
+
+<div class="services-list">
+	<div class="page__container" data-equalizer data-equalize-by-row="true">
+		{{#repeat 4}}
+		<!-- begin services card -->
+		<div class="page__card page__card_columns_two">{{> p-services-card}}</div>
+		<!-- end services card -->
+		{{/repeat}}
+	</div>
+</div>

@@ -1,0 +1,43 @@
+// ========== 6.6. BEGIN BLOG LIST ========== //
+.blog-list {
+  &__article {
+    margin-bottom: rem-calc(15);
+  }
+
+  &__article-header {
+    @include position($position: relative);
+  }
+
+  &__article-header-image {
+    width: 100%;
+    @include breakpoint(small) {
+      padding-bottom: 55%;
+    }
+    @include breakpoint(medium) {
+      padding-bottom: 45%;
+    }
+    @include breakpoint(large) {
+      padding-bottom: 45%;
+    }
+  }
+
+  &__article-headline {
+    @include position($position: absolute, $top: 3);
+    @include xy-cell;
+  }
+
+  &__article-info {
+    @include xy-grid;
+    @include position($position: absolute, $left: 0, $right: 0, $bottom: 0);
+  }
+
+  &__article-info-inner {
+    @include flex;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  &__published-date-published {
+    @include show-for($size: large);
+  }
+}
+// ========== END BLOG LIST ========== //

@@ -1,0 +1,60 @@
+---
+layout: internal
+title: Результаты поиска - Фотограф Инга Заяц
+---
+
+<div class="page__separator"></div>
+
+<div class="search-page page__layout page__layout_columns_nine">
+	<div class="page__content">
+		<h2 class="search-page__headline">
+			Результаты поиска по:
+			<span class="search-page__query">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+		</h2>
+
+		{{#repeat 5}}
+		<!-- begin article -->
+		<article class="article search-page__article">
+			<header class="article-header search-page__article-header">
+				<div class="article-header__image search-page__article-header-image"
+					style="background-image: url({{root}}assets/images/blog/post-1/post-1.jpg)"></div>
+				<h2 class="article__headline search-page__article-headline">
+					Заголовок: Заголовок Заголовок Заголовок
+				</h2>
+			</header>
+			<div class="article-content search-page__article-content">
+				<p class="article-content__intro">
+					<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+						iaculis orci eget lectus consequat posuere. In ut dolor bibendum,
+						scelerisque nisi vel, maximus leo. Nulla sodales eros sit amet
+						fermentum ornare. Etiam sit amet fringilla turpis. Class aptent
+						taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+						himenaeos...</strong>
+				</p>
+			</div>
+			<footer class="article-footer">
+				<div class="article-footer__inner">
+					<div class="article-footer__button article-footer__button_position_right">
+						<a href="{{root}}blog/blog-item.html" class="button">Смотреть</a>
+					</div>
+				</div>
+			</footer>
+		</article>
+		<!-- end article -->
+		{{/repeat}}
+	</div>
+</div>
+
+<!-- begin sidebar -->
+<aside class="page__sidebar page__sidebar_columns_three">
+	{{> author-widget}}
+	<div class="sidebar-widget">
+		<h3 class="sidebar-widget__headline">Последние новости</h3>
+		{{#repeat 3}} {{> news-widget}} {{/repeat}}
+	</div>
+	<div class="sidebar-widget">
+		<h3 class="sidebar-widget__headline">Обучение</h3>
+		{{#repeat 3}} {{> training-category-widget}} {{/repeat}}
+	</div>
+</aside>
+<!-- end sidebar -->

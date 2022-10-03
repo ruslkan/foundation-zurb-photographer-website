@@ -1,0 +1,39 @@
+// ========== 5.23. BEGIN SERVICES SECTION ========== //
+.section-services {
+  background-color: $black;
+
+  &__section-card {
+    background-color: $black;
+  }
+
+  &__section-card-headline {
+    text-align: center;
+    color: $light-gray;
+    @include breakpoint(small) {
+      font-size: rem-calc(42px);
+      @include position(absolute, $left: 0, $right: 0, $top: 4);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(50px);
+      @include position(absolute, $left: 0, $right: 0, $top: 3);
+    }
+    @include breakpoint(large) {
+      font-size: rem-calc(50px);
+      @include position(absolute, $left: 0, $right: 0, $top: 8);
+    }
+  }
+
+  &__section-card-intro {
+    background-color: $black;
+    color: $medium-gray;
+    @include card-section;
+    @include flex;
+    @include flex-align(center, middle);
+    @include xy-gutters($gutter-position: bottom);
+    font-style: italic;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+// ========== END SERVICES SECTION ========== //
