@@ -1,7 +1,5 @@
 # Photographer's personal website
 
-Demo: https://ruslkan.github.io/photographer/
-
 The template has a Gulp-based build system with the following features:
 
 - Handlebars HTML templates with Panini
