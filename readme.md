@@ -1,5 +1,7 @@
 # Photographer's personal website
 
+Demo: https://ruslkan.github.io/photographer/
+
 The template has a Gulp-based build system with the following features:
 
 - Handlebars HTML templates with Panini
@@ -15,7 +17,7 @@ The template has a Gulp-based build system with the following features:
 
 To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (Version 6 or greater recommended, tested with 6.11.4 and 8.12.0)
+- [NodeJS](https://nodejs.org/en/) (Version 8 or greater recommended, tested with 8.11.4 and 14.15.0)
 - [Git](https://git-scm.com/)
 
 This template can be installed with the Foundation CLI, or downloaded and set up manually.

@@ -84,8 +84,9 @@ function sass() {
 
   const postCssPlugins = [
     // Autoprefixer
-    autoprefixer(),
-
+    autoprefixer({
+      overrideBrowserslist: ['last 2 versions', 'ie >= 9', 'android >= 4.4', 'ios >= 7']
+    })
     // UnCSS - Uncomment to remove unused styles in production
     // PRODUCTION && uncss.postcssPlugin(UNCSS_OPTIONS),
   ].filter(Boolean);

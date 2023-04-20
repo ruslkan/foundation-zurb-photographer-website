@@ -1,65 +1,66 @@
 // ====== 5.2. BEGIN ARTICLE ====== //
 .article {
+	
   &__headline {
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, Arial,
-      Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    color: $white;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-    @include breakpoint(small) {
-      font-size: rem-calc(18);
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(26);
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(42);
-    }
+		font-family: 'Open Sans Condensed',franklingothicdemicondcRg,Arial,Helvetica Neue,Helvetica,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: $white;
+		text-shadow: 0 1px 4px rgba(0,0,0,.5);
+		@include breakpoint(small) {
+			font-size: rem-calc(18);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(26);
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(42);
+		}
 
-    &_text_center {
-      text-align: center;
-    }
+		&_text_center {
+			text-align: center;
+		}
 
-    &_color_black {
-      color: $black;
-    }
-  }
+		&_color_black {
+			color: $black;
+		}
+	}
 
-  &__headline-link {
-    color: $white;
+	&__headline-link {
+		color: $white;
 
-    &:hover {
-      color: $highlight;
-      -webkit-transition: color 0.3s ease-in;
-      transition: color 0.3s ease-in;
-    }
+		&:hover {
+			color: $highlight;
+		 	-webkit-transition: color 0.3s ease-in;
+			transition: color 0.3s ease-in;
+		}
 
-    &_color_black {
-      color: $black;
-    }
-  }
+		&_color_black {
+			color: $black;
+		}
+	}
 }
 
 .article-header {
-  &__image {
-    background-color: #f4f4f4;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-}
 
+	&__image {
+		background-color: #f4f4f4;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+  	background-size: cover;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	min-height: 100%;
+  	z-index: -1;
+	}
+}
+	
 .article-info {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: $light-gray;
-  @include breakpoint(small) {
+	background-color: rgba(0,0,0,.5);
+	color: $light-gray;
+	@include breakpoint(small) {
     font-size: rem-calc(11);
   }
   @include breakpoint(medium) {
@@ -70,142 +71,144 @@
   }
 
   &__inner {
-    width: 100%;
-    @include flex;
-    margin: 0 0.5rem 0 0.5rem;
+  	width: 100%;
+  	@include flex;
+		margin: 0 0.5rem 0 0.5rem;
   }
 
   &__block {
-    &_1 {
-      @include xy-cell($size: shrink, $gutter-position: right);
-      @include flex-align-self(middle);
-    }
 
-    &_2 {
-      @include xy-cell($size: shrink, $gutter-position: right);
-      @include flex-align-self(middle);
-      @include hide-for-only($size: small);
-    }
+		&_1 {
+			@include xy-cell($size: shrink, $gutter-position: right);
+			@include flex-align-self(middle);
+		}
 
-    &_3 {
-      @include xy-cell($size: shrink, $gutter-position: right);
-      @include flex-align-self(middle);
-      @include hide-for-only($size: small);
-    }
+		&_2 {
+			@include xy-cell($size: shrink, $gutter-position: right);
+			@include flex-align-self(middle);
+			@include hide-for-only($size: small);
+		}
 
-    &_4 {
-      @include xy-cell($size: auto, $gutter-position: right);
-      @include flex-align-self(middle);
-    }
+		&_3 {
+			@include xy-cell($size: shrink, $gutter-position: right);
+			@include flex-align-self(middle);
+			@include hide-for-only($size: small);
+		}
 
-    &_text_right {
-      text-align: right;
-    }
-  }
+		&_4 {
+			@include xy-cell($size: auto, $gutter-position: right);
+			@include flex-align-self(middle);
+		}
+
+		&_text_right {
+			text-align: right;
+		}
+	}
 }
 
 .article-content {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  @include breakpoint(small) {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 0;
-  }
-  @include breakpoint(medium) {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-bottom: 0;
-  }
-  @include breakpoint(large) {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	@include breakpoint(small) {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-bottom: 0;
+	}
+	@include breakpoint(medium) {
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-bottom: 0;
+	}
+	@include breakpoint(large) {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
 
-  &__link {
-    &:hover {
-      text-decoration: underline;
-      color: $highlight;
-      -webkit-transition: color 0.3s ease-in;
-      transition: color 0.3s ease-in;
-    }
-  }
+	&__link {
 
-  &__intro {
-    line-height: 1.4375;
-    font-size: rem-calc(18);
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+		&:hover {
+			text-decoration: underline;
+			color: $highlight;
+		 	-webkit-transition: color 0.3s ease-in;
+			transition: color 0.3s ease-in;
+		}
+	}
 
-  &__text {
-    padding-top: 5px;
-  }
+	&__intro {
+		line-height: 1.4375;
+		font-size: rem-calc(18);
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 
-  &__subtitle {
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    @include breakpoint(small) {
-      font-size: rem-calc(16);
-      padding: 0;
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(18);
-      padding: 0;
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(26);
-      padding: 1rem 0 1rem 0;
-    }
+	&__text {
+		padding-top: 5px;
+	}
 
-    &_text_center {
-      text-align: center;
-    }
-  }
+	&__subtitle {
+		font-family: 'Open Sans Condensed',franklingothicdemicondcRg,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		@include breakpoint(small) {
+			font-size: rem-calc(16);
+			padding: 0;
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(18);
+			padding: 0;
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(26);
+			padding: 1rem 0 1rem 0;
+		}
 
-  &__image {
+		&_text_center {
+			text-align: center;
+		}
+	}
+
+	&__image {
     max-width: 100%;
     height: auto;
     margin: 1rem 0;
-  }
+	}
 }
 
 .article-footer {
-  @include xy-grid-container;
-  @include xy-cell;
-  @include breakpoint(small) {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  @include breakpoint(medium) {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  @include breakpoint(large) {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+	@include xy-grid-container;
+	@include xy-cell;
+	@include breakpoint(small) {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+	@include breakpoint(medium) {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+	@include breakpoint(large) {
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
 
-  &__inner {
-    @include flex;
-  }
+	&__inner {
+		@include flex;
+	}
 
-  &__social {
-    @include xy-grid;
+	&__social {
+		@include xy-grid;
+		
+		&_position_left {
+			@include flex-align(left);
+		}
+	}
 
-    &_position_left {
-      @include flex-align(left);
-    }
-  }
-
-  &__button {
-    @include xy-cell($size: auto, $gutter-position: right);
-    @include flex;
-
-    &_position_right {
-      @include flex-align(right, middle);
-    }
-  }
+	&__button {
+		@include xy-cell($size: auto, $gutter-position: right);
+		@include flex;
+		
+		&_position_right {
+			@include flex-align(right, middle);
+		}
+	}
 }
-// ====== END ARTICLE ====== //
+// ====== END ARTICLE ====== //	

@@ -67,11 +67,9 @@ In the Grid you can nest cells down as far as you'd like. Just embed grid-x insi
 
 ```html
 <div class="grid-x">
-  <div class="small-8 cell">
-    8
+  <div class="small-8 cell">8
     <div class="grid-x">
-      <div class="small-8 cell">
-        8 Nested
+      <div class="small-8 cell">8 Nested
         <div class="grid-x">
           <div class="small-8 cell">8 Nested Again</div>
           <div class="small-4 cell">4</div>
@@ -125,6 +123,8 @@ As you've probably noticed in the examples above, you have access to a small, me
   <div class="small-9 cell">9, last</div>
 </div>
 
+
+
 # Colors
 
 <p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>\_settings.scss</code></p>
@@ -163,6 +163,8 @@ As you've probably noticed in the examples above, you have access to a small, me
     </div>
   </div>
 </div>
+
+
 
 # Typography
 
@@ -206,6 +208,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.
 
+
+
 # Buttons
 
 <p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the web, we follow similar conventions.</p>
@@ -235,6 +239,8 @@ These buttons are used for less important, secondary actions on a page.
 <a href="#" class="secondary small button">Small button</a>
 <a href="#" class="secondary tiny button">Tiny button</a>
 ```
+
+
 
 # Forms
 
@@ -335,6 +341,8 @@ Form elements in Foundation are styled based on their type attribute rather than
   </div>
 </form>
 ```
+
+
 
 # New Section
 

@@ -5,97 +5,77 @@ title: Группа "Групповое обучение" фотографии -
 ---
 
 <!-- begin hero -->
-<div
-	data-interchange="[{{root}}assets/images/training/group/lesson/lesson-1/hero-small.jpg, small], [{{root}}assets/images/training/group/lesson/lesson-1/hero-medium.jpg, medium], [{{root}}assets/images/training/group/lesson/lesson-1/hero-large.jpg, large]"
-	class="hero">
-	<div class="hero__headline">
-		<span>Имя группы обучения</span>
-	</div>
+<div data-interchange="[{{root}}assets/images/training/group/lesson/lesson-1/hero-small.jpg, small], [{{root}}assets/images/training/group/lesson/lesson-1/hero-medium.jpg, medium], [{{root}}assets/images/training/group/lesson/lesson-1/hero-large.jpg, large]" class="hero">
+  <div class="hero__headline">
+    <span>Имя группы обучения</span>
+  </div>
 </div>
 <!-- end hero -->
 
 <div class="page__separator"></div>
 
 <div class="training-group page__layout page__layout_columns_nine">
-	<div class="page__content">
-		<!-- begin article -->
-		<article class="article training-group__article">
-			<div class="article-content training-group__article-content">
-				<p class="article-content__intro">
-					<strong>Длительность курса - 3 недели (6 занятий с преподавателем в
-						группе)</strong>
-				</p>
-				<p class="article-content__text"><strong>Техническая часть:</strong></p>
+  <div class="page__content">
+    
+    <!-- begin article -->
+    <article class="article training-group__article">
+      
+      <div class="article-content training-group__article-content">
+        <p class="article-content__intro"><strong>Длительность курса - 3 недели (6 занятий с преподавателем в группе)</strong></p>
+        <p class="article-content__text"><strong>Техническая часть:</strong></p>
 
-				<ol class="article-content__list">
-					<li class="article-content__item">
-						Знакомство с основными техническими моментами работы с
-						фотоаппаратурой.
-					</li>
-					<li class="article-content__item">
-						Знакомство и обучение работе со студийным оборудованием. Как
-						использовать студийное оборудование для достижения желаемого
-						результата в фотосъемке.
-					</li>
-					<li class="article-content__item">
-						Особенности фотосъемки моделей в зависимости от типа внешности.
-					</li>
-					<li class="article-content__item">
-						В каждое занятие включен большой практический блок с участием модели
-						и визажиста.
-					</li>
-				</ol>
+        <ol class="article-content__list">
+          <li class="article-content__item">Знакомство с основными техническими моментами работы с фотоаппаратурой.</li>
+          <li class="article-content__item">Знакомство и обучение работе со студийным оборудованием. Как использовать студийное оборудование для достижения желаемого результата в фотосъемке.</li>
+          <li class="article-content__item">Особенности фотосъемки моделей в зависимости от типа внешности.</li>
+          <li class="article-content__item">В каждое занятие включен большой практический блок с участием модели и визажиста.</li>
+        </ol>
+     
+        <p class="article-content__text"><strong>Практическая часть:*</strong></p>
 
-				<p class="article-content__text">
-					<strong>Практическая часть:*</strong>
-				</p>
+        <ol class="article-content__list">
+          <li class="article-content__item">Студийная съемка и работа в команде (модель – стилист - визажист).</li>
+          <li class="article-content__item">Фотосъемка со студийным оборудованием - технические приемы от самых простых до самых сложных.</li>
+          <li class="article-content__item">Самостоятельная работа под контролем преподавателя.</li>
+          <li class="article-content__item">Разбор ошибок.</li>
+        </ol>
 
-				<ol class="article-content__list">
-					<li class="article-content__item">
-						Студийная съемка и работа в команде (модель – стилист - визажист).
-					</li>
-					<li class="article-content__item">
-						Фотосъемка со студийным оборудованием - технические приемы от самых
-						простых до самых сложных.
-					</li>
-					<li class="article-content__item">
-						Самостоятельная работа под контролем преподавателя.
-					</li>
-					<li class="article-content__item">Разбор ошибок.</li>
-				</ol>
-			</div>
-			<footer class="article-footer">
-				<p class="article__note">
-					<em>*Практические занятия проходят в лучших фотостудиях Москвы</em>
-				</p>
-				<div class="article-footer__social article-footer__social_position_left">
-					{{> social-button-share}}
-				</div>
-			</footer>
-		</article>
-		<!-- end article -->
+      </div>
+      <footer class="article-footer">
+        <p class="article__note"><em>*Практические занятия проходят в лучших фотостудиях Москвы</em></p>
+        <div class="article-footer__social article-footer__social_position_left">
+          {{> social-button-share}}
+        </div>
+      </footer>
+    </article>
+    <!-- end article -->
 
-		<div class="page__container training-group__page-container">
-			<!-- begin training lessons card -->
-			{{#repeat 2}}
-			<div class="page__card page__card_columns_two">
-				{{> p-training-lesson-card}}
-			</div>
-			{{/repeat}}
-			<!-- end training lessons card -->
-		</div>
+    <div class="page__container training-group__page-container">
 
-		<!-- begin form -->
-		<div class="page__form">
-			<h3 class="page__form-headline">Предварительная запись</h3>
-			<div class="page__form-inner">{{> request-form}}</div>
-		</div>
-		<!-- end form -->
-	</div>
+      <!-- begin training lessons card -->
+      {{#repeat 2}}
+      <div class="page__card page__card_columns_two">
+        {{> p-training-lesson-card}}
+      </div>
+      {{/repeat}}
+      <!-- end training lessons card -->
+
+    </div>
+
+    <!-- begin form -->
+    <div class="page__form">
+      <h3 class="page__form-headline">Предварительная запись</h3>
+      <div class="page__form-inner">
+        {{> request-form}}
+      </div>
+    </div>
+    <!-- end form -->
+
+  </div>
 </div>
 
 <!-- begin sidebar -->
 <aside class="page__sidebar page__sidebar_columns_three">
-	{{> author-widget}}
+  {{> author-widget}}
 </aside>
 <!-- end sidebar -->

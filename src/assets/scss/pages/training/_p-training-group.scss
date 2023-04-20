@@ -1,5 +1,6 @@
 // ========== 6.9. BEGIN TRAINING LIST PAGE====== //
 .training-group {
+
   &__page-container {
     background-color: $white;
   }
@@ -16,7 +17,7 @@
   &__article-content {
     margin-bottom: rem-calc(4rem);
   }
-
+  
   &__pagination {
     margin-top: rem-calc(1rem);
   }

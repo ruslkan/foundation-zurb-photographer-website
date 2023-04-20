@@ -12,6 +12,7 @@ UNCSS_OPTIONS:
   html:
     # Search for used CSS classes in generated HTML files
     - "dist/**/*.html"
+  timeout: 1000
   ignore:
     - !!js/regexp .foundation-mq
     - !!js/regexp ^\.is-.*
@@ -23,7 +24,8 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{images,js,scss,fonts}/*"
+    # - "!src/assets/{images,js,scss,fonts}/*"
+    - "!src/assets/{img,js,scss}{,/**/*}"
   fonts:
    - "src/assets/fonts/*"
    - "node_modules/font-awesome/fonts/*"

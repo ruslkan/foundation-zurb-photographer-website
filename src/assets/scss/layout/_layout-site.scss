@@ -1,7 +1,7 @@
 // ========== BEGIN LAYOUT ========== //
 html,
 body {
-  height: 100%;
+  height:100%;
 }
 
 body {
@@ -14,17 +14,17 @@ body {
 }
 
 .page {
-  @include xy-grid-container($width: 100%, $padding: 0);
+  @include xy-grid-container($width:100%, $padding:0);
   //@include xy-grid-container($width:1600px, $padding:0);
-
+  
   &__top-mobile {
-    @include hide-for(large);
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-
+  @include hide-for(large);
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    
     &.hidden {
       transform: translateY(-100%);
     }
@@ -36,6 +36,7 @@ body {
   }
 
   &__layout {
+
     &_columns_nine {
       @include breakpoint(small) {
         @include xy-cell(12, $gutters: 5px);
@@ -44,12 +45,14 @@ body {
         @include xy-cell(8, $gutters: 5px);
       }
       @include breakpoint(large) {
-        @include xy-cell(9, $gutters: 6px);
+        @include xy-cell(9,  $gutters: 6px);
       }
     }
+    
   }
 
   &__card {
+    
     &_columns_two {
       @include breakpoint(small) {
         @include xy-cell(12, $gutters: 0);
@@ -83,30 +86,15 @@ body {
     line-height: 1.2;
     @include breakpoint(small) {
       font-size: rem-calc(14);
-      @include xy-cell(
-        12,
-        $gutters: 1rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(12, $gutters:1rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
     @include breakpoint(medium) {
       font-size: rem-calc(18);
-      @include xy-cell(
-        12,
-        $gutters: 2rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(12, $gutters:2rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
     @include breakpoint(large) {
       font-size: rem-calc(22);
-      @include xy-cell(
-        10,
-        $gutters: 3rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(10, $gutters:3rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
   }
 
@@ -114,28 +102,13 @@ body {
     padding: 2rem;
     background: $light-gray;
     @include breakpoint(small) {
-      @include xy-cell(
-        12,
-        $gutters: 1rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(12, $gutters:1rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
     @include breakpoint(medium) {
-      @include xy-cell(
-        12,
-        $gutters: 2rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(12, $gutters:2rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
     @include breakpoint(large) {
-      @include xy-cell(
-        10,
-        $gutters: 3rem,
-        $gutter-type: margin,
-        $gutter-position: top bottom right left
-      );
+      @include xy-cell(10, $gutters:3rem, $gutter-type:margin, $gutter-position: top bottom right left);
     }
   }
 
@@ -147,13 +120,14 @@ body {
   &__pagination {
     margin-top: rem-calc(1.5rem);
     @include xy-grid;
-
+    
     &_position_center {
       @include flex-align(center);
     }
   }
 
   &__sidebar {
+
     &_columns_three {
       @include breakpoint(small) {
         @include xy-cell(12, $gutters: 5px);
@@ -173,6 +147,7 @@ body {
 
 // ===== begin top bar mobile ===== //
 .top-mobile {
+  
   &__menu-icon {
     color: rgba(199, 195, 195, 0.95);
     font-size: rem-calc(42);
@@ -210,34 +185,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-
+  
   &__container-inner {
     @include xy-grid-container;
     padding-top: 2rem;
   }
 
   &__close-button {
-    @include position($position: absolute, $top: 0.8, $right: 0.8);
+    @include position($position: absolute,$top: 0.8,$right: 0.8);
     color: $medium-gray;
     font-size: 1.8rem;
-
-    &:hover,
-    focus {
+    
+    &:hover, focus {
       color: $dark-gray;
     }
   }
 
   &__logo {
-    @include thumbnail;
+   @include thumbnail;
     border: none;
   }
-
+  
   &__menu-main {
     margin: 3rem 0;
   }
 
   &__menu-main-list {
-    @include breakpoint(small) {
+   @include breakpoint(small) {
       font-size: rem-calc(12);
     }
     @include breakpoint(medium) {
@@ -262,24 +236,24 @@ body {
 // ===== begin back to top ===== //
 .scrollup {
   @include hide-for-only($size: small);
-  width: 40px;
-  height: 40px;
-  opacity: 0.4;
-  position: fixed;
-  bottom: 50px;
-  right: 30px;
-  display: none;
-  text-indent: -9999px;
+  width:40px;
+  height:40px;
+  opacity:0.4;
+  position:fixed;
+  bottom:50px;
+  right:30px;
+  display:none;
+  text-indent:-9999px;
   background: url('../images/icon_top.png') no-repeat;
   z-index: 10;
 }
 
-input[name='surname'] {
-  display: block;
-  width: 2px;
-  height: 3px;
-  margin-bottom: -3px;
-  opacity: 0.01;
+ input[name="surname"] {
+    display: block;
+    width: 2px;
+    height: 3px;
+    margin-bottom: -3px;
+    opacity: 0.01;
 }
 // ===== end back to top ===== //
 

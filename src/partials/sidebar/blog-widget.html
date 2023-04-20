@@ -1,31 +1,33 @@
 <div class="widget">
-	<div class="widget__image-bg" style="background-image: url({{root}}assets/images/blog/post-2/preview/post-2.jpg)">
-	</div>
 
-	<div class="widget__block-inner">
-		<div class="published-date widget__published-date">
-			<span class="published-date__icon published-date__icon_color_dark-gray"><i class="fa fa-calendar"
-					aria-hidden="true"></i></span>
-			<span class="published-date__date published-date__date_color_dark-gray">
-				<time datetime="2019-01-04 19:00">Январь 4, 2019</time>
-			</span>
-		</div>
-	</div>
+  <div class="widget__image-bg" style="background-image: url({{root}}assets/images/blog/post-2/preview/post-2.jpg)">
+  </div>
+  
+  <div class="widget__block-inner">
 
-	<div class="widget__content">
-		<h4 class="widget__headline">Заголовок</h4>
-		<p class="widget__introtext">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-			facere, ipsam quae sit, eaque perferendis commodi!...
-		</p>
-	</div>
+    <div class="published-date widget__published-date">
+      <span class="published-date__icon published-date__icon_color_dark-gray"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+      <span class="published-date__date published-date__date_color_dark-gray">
+        <time datetime="2019-01-04 19:00">Январь 4, 2019</time>
+      </span>
+    </div>
 
-	<div class="widget__block-container">
-		<div class="widget__block-inner">
-			<div class="widget__block widget__block_position_left">{{> avatar}}</div>
-			<div class="widget__block widget__block_position_right">
-				<a href="{{root}}blog/blog-item.html" class="button widget__button">Читать</a>
-			</div>
-		</div>
-	</div>
+  </div>
+ 
+  <div class="widget__content">
+    <h4 class="widget__headline">Заголовок</h4>
+    <p class="widget__introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis commodi!...</p>
+  </div>
+
+  <div class="widget__block-container">
+    <div class="widget__block-inner">
+      <div class="widget__block widget__block_position_left">
+        {{> avatar}}
+      </div>
+      <div class="widget__block widget__block_position_right">
+        <a href="{{root}}blog/blog-item.html" class="button widget__button">Читать</a>
+      </div>
+    </div>
+  </div>
+  
 </div>

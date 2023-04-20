@@ -1,26 +1,27 @@
 // ========== 5.12. BEGIN SITE HEADER ========== //
 .sticky-container {
-  background: $black;
+	background: $black;
 }
 
 .site-header {
-  &__container {
-    @include top-bar-container;
-    @include show-for(large);
-    transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+	
+	&__container {
+		@include top-bar-container;
+		@include show-for(large);
+		transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 
-    &.hidden {
-      transform: translateY(-100%);
+		&.hidden {
+    	transform: translateY(-100%);
     }
   }
-
-  &__title-bar-right {
-    @include xy-grid;
-  }
-
-  &__search-toggle {
-    margin-right: 0.5rem;
-    margin-left: 1rem;
-  }
+		
+	&__title-bar-right {
+		@include xy-grid;
+	}
+	
+	&__search-toggle {
+		margin-right: 0.5rem;
+		margin-left: 1rem;
+	}
 }
 // ========== END SITE HEADER ========== //

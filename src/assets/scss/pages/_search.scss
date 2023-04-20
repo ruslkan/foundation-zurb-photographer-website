@@ -1,21 +1,26 @@
 // ========== 6.12. BEGIN SEARCH PAGE ========== //
 .search-page {
+	
   &__headline {
     @include xy-cell;
-    font-weight: 600;
-    line-height: 1.2;
-    color: $black;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-    @include padding($top: 3, $right: 0, $bottom: 2, $left: 0);
-    @include breakpoint(small) {
-      font-size: rem-calc(16);
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(20);
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(36);
-    }
+		font-weight: 600;
+		line-height: 1.2;
+		color: $black;
+		text-shadow: 0 1px 4px rgba(0,0,0,.5);
+		@include padding(
+			$top: 3,
+			$right: 0,
+			$bottom: 2,
+			$left: 0);
+		@include breakpoint(small) {
+			font-size: rem-calc(16);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(20);
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(36);
+		}
   }
 
   &__query {
@@ -34,14 +39,18 @@
   }
 
   &__article {
-    @include xy-cell;
-    border: none;
-    border-bottom: 3px solid $medium-gray;
-    @include padding($top: 2, $right: 0, $bottom: 1, $left: 0);
+  	@include xy-cell;
+  	border: none;
+  	border-bottom: 3px solid $medium-gray;
+  	@include padding(
+  		$top: 2,
+			$right: 0,
+			$bottom: 1,
+			$left: 0);
   }
 
   &__article-header {
-    @include position($position: relative);
+    @include position($position:relative);
   }
 
   &__article-header-image {
@@ -58,25 +67,25 @@
   }
 
   &__article-headline {
-    @include position($position: absolute, $top: 3);
+  	@include position($position:absolute, $top:3);
     @include xy-cell;
   }
 
   &__article-content {
-    @include breakpoint(small) {
-      padding-right: 5px;
-      padding-left: 5px;
-      margin-bottom: 0;
-    }
-    @include breakpoint(medium) {
-      padding-right: 10px;
-      padding-left: 10px;
-      margin-bottom: 0;
-    }
-    @include breakpoint(large) {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
+  	@include breakpoint(small) {
+  		padding-right: 5px;
+  		padding-left: 5px;
+  		margin-bottom: 0;
+  	}
+  	@include breakpoint(medium) {
+  		padding-right: 10px;
+  		padding-left: 10px;
+  		margin-bottom: 0;
+  	}
+  	@include breakpoint(large) {
+  		padding-right: 10px;
+  		padding-left: 10px;
+  	}
   }
 }
 // ========== END SEARCH PAGE ========== //

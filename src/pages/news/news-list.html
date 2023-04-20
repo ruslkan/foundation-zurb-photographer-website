@@ -7,95 +7,86 @@ title: Список новостей - Фотограф Инга Заяц
 <div class="page__separator"></div>
 
 <div class="news-list page__layout page__layout_columns_nine">
-	<!-- begin article -->
-	{{#repeat 3}}
-	<article class="page__content article news-list__article">
-		<header class="article-header news-list__article-header">
-			<div class="article-header__image news-list__article-header-image"
-				style="background-image: url({{root}}assets/images/news/news-1/preview/news-1.jpg)"></div>
-			<h2 class="article__headline news-list__article-headline">
-				<a href="news-item.html" class="article__headline-link">Новости: Заголовок новости</a>
-			</h2>
-			<div class="article-info news-list__article-info">
-				<div class="article-info__inner">
-					<div class="article-info__block article-info__block_1">
-						<div class="avatar">
-							<img src="{{root}}assets/images/author/inga.png" alt="Фотограф Инга Заяц" class="avatar__image" />
-							<a class="avatar__link" href="{{root}}about-me.html">
-								<p class="avatar__signature">Инга Заяц</p>
-							</a>
-						</div>
-					</div>
-					<div class="article-info__block article-info__block_2">
-						<div class="counter counter-eye">
-							<span class="counter__icon counter-eye__icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
-							<span class="counter__number counter-eye__number">324555</span>
-						</div>
-					</div>
-					<div class="article-info__block article-info__block_3">
-						<div class="counter counter-commenting">
-							<a href="#comments" class="counter__link counter-commenting__link">
-								<span class="counter__icon counter-commenting__icon"><i class="fa fa-commenting-o"
-										aria-hidden="true"></i></span>
-								<span class="counter__number counter-commenting__number">55</span>
-							</a>
-						</div>
-					</div>
-					<div class="article-info__block article-info__block_text_right article-info__block_4">
-						<div class="published-date">
-							<span class="published-date__icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-							<span class="published-date__published news-list__published-date-published">Опубликовано:</span>
-							<span class="published-date__date">
-								<time datetime="2019-01-04 19:00">Январь 4, 2019</time>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="article-content">
-			<p class="article-content__intro">
-				<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-					iaculis orci eget lectus consequat posuere. In ut dolor bibendum,
-					scelerisque nisi vel, maximus leo. Nulla sodales eros sit amet
-					fermentum ornare. Etiam sit amet fringilla turpis. Class aptent taciti
-					sociosqu ad litora torquent per conubia nostra, per inceptos
-					himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia
-					nostra, per inceptos himenaeos. Integer sit amet elit eget nulla
-					pulvinar tempor sit amet sit amet sem. Donec ac metus nec enim congue
-					blandit. Quisque vitae nibh a felis luctus luctus pretium vel
-					ex...</strong>
-			</p>
-		</div>
-		<footer class="article-footer">
-			<div class="article-footer__inner">
-				<div class="article-footer__social article-footer__social_position_left">
-					{{> social-button-share}}
-				</div>
-				<div class="article-footer__button article-footer__button_position_right">
-					<a href="{{root}}news/news-item.html" class="button">Читать</a>
-				</div>
-			</div>
-		</footer>
-	</article>
-	{{/repeat}}
-	<!-- end article -->
 
-	<!-- begin pagination -->
-	<div class="page__pagination">{{> pagination}}</div>
-	<!-- end pagination -->
+  <!-- begin article -->
+  {{#repeat 3}}
+  <article class="page__content article news-list__article">
+    <header class="article-header news-list__article-header">
+      <div class="article-header__image news-list__article-header-image" style="background-image: url({{root}}assets/images/news/news-1/preview/news-1.jpg)"></div>
+      <h2 class="article__headline news-list__article-headline"><a href="news-item.html" class="article__headline-link">Новости: Заголовок новости</a></h2>
+      <div class="article-info news-list__article-info">
+        <div class="article-info__inner">
+          <div class="article-info__block article-info__block_1">
+            <div class="avatar">
+              <img src="{{root}}assets/images/author/inga.png" alt="Фотограф Инга Заяц" class="avatar__image">
+              <a class="avatar__link" href="{{root}}about-me.html"><p class="avatar__signature">Инга Заяц</p></a>
+            </div>
+          </div>
+          <div class="article-info__block article-info__block_2">
+            <div class="counter counter-eye">
+              <span class="counter__icon counter-eye__icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+              <span class="counter__number counter-eye__number">324555</span>
+            </div>
+          </div>
+          <div class="article-info__block article-info__block_3">
+            <div class="counter counter-commenting">
+              <a href="#comments" class="counter__link counter-commenting__link">
+                <span class="counter__icon counter-commenting__icon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
+                <span class="counter__number counter-commenting__number">55</span>
+              </a>
+            </div>
+          </div>
+          <div class="article-info__block article-info__block_text_right article-info__block_4">
+            <div class="published-date">
+              <span class="published-date__icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+              <span class="published-date__published news-list__published-date-published">Опубликовано:</span>
+              <span class="published-date__date">
+                <time datetime="2019-01-04 19:00">Январь 4, 2019</time>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="article-content">
+      <p class="article-content__intro"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis orci eget lectus consequat posuere. In ut dolor bibendum, scelerisque nisi vel, maximus leo. Nulla sodales eros sit amet fermentum ornare. Etiam sit amet fringilla turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sit amet elit eget nulla pulvinar tempor sit amet sit amet sem. Donec ac metus nec enim congue blandit. Quisque vitae nibh a felis luctus luctus pretium vel ex...</strong></p>
+    </div>
+    <footer class="article-footer">
+      <div class="article-footer__inner">
+        <div class="article-footer__social article-footer__social_position_left">
+          {{> social-button-share}}
+        </div>
+        <div class="article-footer__button article-footer__button_position_right">
+          <a href="{{root}}news/news-item.html" class="button">Читать</a>
+        </div>
+      </div>
+    </footer>
+  </article>
+  {{/repeat}}
+  <!-- end article -->
+
+  <!-- begin pagination -->
+  <div class="page__pagination">
+    {{> pagination}}
+  </div>
+  <!-- end pagination -->
 </div>
 
 <!-- begin sidebar -->
 <aside class="page__sidebar page__sidebar_columns_three">
-	{{> author-widget}} {{> subscribe}}
-	<div class="sidebar-widget">
-		<h3 class="sidebar-widget__headline">Последнее на блоге</h3>
-		{{#repeat 3}} {{> blog-widget}} {{/repeat}}
-	</div>
-	<div class="sidebar-widget">
-		<h3 class="sidebar-widget__headline">Обучение</h3>
-		{{#repeat 3}} {{> training-category-widget}} {{/repeat}}
-	</div>
+  {{> author-widget}}
+  {{> subscribe}}
+  <div class="sidebar-widget">
+  <h3 class="sidebar-widget__headline">Последнее на блоге</h3>
+  {{#repeat 3}}
+    {{> blog-widget}}
+  {{/repeat}}
+  </div>
+  <div class="sidebar-widget">
+  <h3 class="sidebar-widget__headline">Обучение</h3>
+  {{#repeat 3}}
+    {{> training-category-widget}}
+  {{/repeat}}
+  </div>
 </aside>
 <!-- end sidebar -->

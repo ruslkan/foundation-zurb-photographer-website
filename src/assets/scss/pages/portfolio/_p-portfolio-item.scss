@@ -1,13 +1,13 @@
 // ========== 6.8. BEGIN PORTFOLIO ITEM PAGE ========== //
 .portfolio-item {
-  @include breakpoint(small) {
-    @include xy-cell($gutters: 10px);
+	@include breakpoint(small) {
+		@include xy-cell($gutters:10px);
   }
   @include breakpoint(medium) {
-    @include xy-cell($gutters: 10px);
+    @include xy-cell($gutters:10px);
   }
   @include breakpoint(large) {
-    @include xy-cell($gutters: 5px);
+    @include xy-cell($gutters:5px);
   }
 }
 // ========== END PORTFOLIO ITEM PAGE ========== //

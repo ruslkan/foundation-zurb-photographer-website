@@ -1,10 +1,12 @@
 // ========== 7.2. BEGIN SIDEBAR WIDGET ========== //
 .widget {
-  @include card-container($border: none);
+  @include card-container(
+    $border:none
+    );
   font-weight: 400;
   @include position(relative);
   margin: 0.5rem 0 0 0;
-
+  
   &__block-container {
     @include card-section;
     @include breakpoint(small) {
@@ -18,7 +20,12 @@
     }
 
     &_position_top {
-      @include position(absolute, $left: 0, $right: 0, $top: 0);
+      @include position(
+        absolute,
+          $left:0,
+          $right:0,
+          $top:0
+      );
     }
 
     &_position_center {
@@ -26,7 +33,12 @@
     }
 
     &_position_bottom {
-      @include position(absolute, $left: 0, $right: 0, $bottom: 0);
+      @include position(
+        absolute,
+          $left:0,
+          $right:0,
+          $bottom:0
+      );
     }
 
     &_size_full {
@@ -40,7 +52,7 @@
 
   &__block {
     @include flex-align-self(middle);
-
+     
     &_position_left {
       @include xy-cell($size: auto);
     }
@@ -55,7 +67,7 @@
       text-align: center;
     }
   }
-
+  
   &__image-bg {
     width: 100%;
     padding-bottom: 55%;
@@ -67,15 +79,14 @@
     background-position: center;
     background-size: cover;
     opacity: 1;
-
+    
     &:hover {
       opacity: 0.7;
     }
   }
 
   &__headline {
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, Arial,
-      Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Open Sans Condensed',franklingothicdemicondcRg,Arial,Helvetica Neue,Helvetica,sans-serif; 
     line-height: 1.2;
     font-weight: 700;
     @include breakpoint(small) {
@@ -85,7 +96,7 @@
       font-size: rem-calc(20);
     }
     @include breakpoint(large) {
-      font-size: rem-calc(24);
+     font-size: rem-calc(24);
     }
 
     &_color_orange {
@@ -101,14 +112,22 @@
     }
 
     &_text_shadow {
-      text-shadow: -1px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px 0 #000,
-        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 1px #000;
+      text-shadow:
+      -1px   0  0   #000, 
+      0    2px 0   #000, 
+      0   -2px 0   #000, 
+      1px  1px 0   #000, 
+      -1px -1px 0   #000, 
+      1px -1px 0   #000, 
+      -1px  1px 0   #000,
+      1px  1px 1px #000;
     }
   }
 
   &__headline-link {
+    
     &:hover {
-      color: darken($highlight, 10%);
+      color: darken( $highlight, 10% );
       text-decoration: underline;
     }
 
@@ -118,12 +137,15 @@
   }
 
   &__label {
-    border-color: transparent #cc8800 transparent transparent;
-    border-color: rgba(255, 255, 255, 0) #cc8800 rgba(255, 255, 255, 0)
-      rgba(255, 255, 255, 0);
+    border-color: transparent #CC8800 transparent transparent;
+    border-color: rgba(255,255,255,0) #CC8800 rgba(255,255,255,0) rgba(255,255,255,0);
     border-style: solid;
     border-width: 0 rem-calc(140) rem-calc(110) 0;
-    @include position($position: absolute, $top: 0, $right: 0);
+    @include position($position:
+      absolute,
+       $top: 0,
+       $right:0
+    );
     height: 0px;
     width: 0px;
   }
@@ -146,9 +168,16 @@
     }
 
     &_text_shadow {
-      text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
-        1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-        1px 1px 5px #000;
+      text-shadow:
+      2px   0  0   #000, 
+      -2px   0  0   #000, 
+      0    2px 0   #000, 
+      0   -2px 0   #000, 
+      1px  1px 0   #000, 
+      -1px -1px 0   #000, 
+      1px -1px 0   #000, 
+      -1px  1px 0   #000,
+      1px  1px 5px #000;
     }
   }
 
@@ -174,12 +203,12 @@
 
   &__content {
     @include card-section;
-  }
+  }  
 
   &__introtext {
     line-height: 1.2;
     @include breakpoint(small) {
-      font-size: rem-calc(14);
+     font-size: rem-calc(14);
     }
     @include breakpoint(medium) {
       font-size: rem-calc(12);
@@ -189,10 +218,17 @@
     }
 
     &_text_shadow {
-      text-shadow: 1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px 0 #000,
-        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 3px #000;
+      text-shadow:
+      1px   0  0   #000, 
+      0    1px 0   #000, 
+      0   -1px 0   #000, 
+      1px  1px 0   #000, 
+      -1px -1px 0   #000, 
+      1px -1px 0   #000, 
+      -1px  1px 0   #000,
+      1px  1px 3px #000;
     }
-
+    
     &_color_gray {
       color: $light-gray;
     }
@@ -200,12 +236,19 @@
 
   &__text {
     margin-bottom: 0.8rem;
-
+    
     &_text_shadow {
-      text-shadow: 1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px 0 #000,
-        -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 3px #000;
+      text-shadow:
+      1px   0  0   #000, 
+      0    1px 0   #000, 
+      0   -1px 0   #000, 
+      1px  1px 0   #000, 
+      -1px -1px 0   #000, 
+      1px -1px 0   #000, 
+      -1px  1px 0   #000,
+      1px  1px 3px #000;
     }
-
+    
     &_color_gray {
       color: $light-gray;
     }

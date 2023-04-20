@@ -1,5 +1,6 @@
 // ========== 5.15. BEGIN PAGINATION ========== //
 .pagination-pointed {
+  
   .pagination-pointed-button {
     position: relative;
     display: inline-block;
@@ -41,7 +42,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: -18px;
@@ -64,11 +65,11 @@
     }
 
     &::before {
-      content: '';
+      content: "";
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -18px;

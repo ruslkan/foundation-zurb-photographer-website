@@ -1,15 +1,18 @@
 <section class="section section-video" id="sectionVideo" data-magellan-target="sectionVideo">
-	<h3 class="section__headline section__headline_text_center">
-		- Видеоролики -
-	</h3>
-	<div class="section__bg-image"
-		data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/video/video-bg.jpg, medium], [{{root}}assets/images/section/video/video-bg.jpg, large]">
-		<div class="section__card-container">
-			<!-- begin section card -->
-			{{#repeat 2}}
-			<div class="section__card section__card_columns_two">{{> s-video}}</div>
-			{{/repeat}}
-			<!-- end section card -->
-		</div>
-	</div>
+	<h3 class="section__headline section__headline_text_center">- Видеоролики -</h3>
+	<div class="section__bg-image" data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/video/video-bg.jpg, medium], [{{root}}assets/images/section/video/video-bg.jpg, large]">
+    
+    	<div class="section__card-container">
+
+    		<!-- begin section card -->
+        	{{#repeat 2}}
+        	<div class="section__card section__card_columns_two">
+            {{> s-video}}
+        	</div>
+        	{{/repeat}}
+        	<!-- end section card -->
+
+        </div>
+		
+	</div>	
 </section>

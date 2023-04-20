@@ -2,56 +2,58 @@
 $alert-box-opacity: 0.2;
 
 .alert-box {
-  padding-right: 3.25rem;
+	padding-right: 3.25rem;
   width: 100%;
-
+  
   &.callout {
     color: $dark-gray;
     font-weight: bold;
     font-size: rem-calc(14);
   }
-
+  
   &.alert {
     border: 3px solid $alert-color;
     border-radius: 5px;
-    background-color: rgba($alert-color, $alert-box-opacity);
+    background-color:rgba($alert-color, $alert-box-opacity);
   }
 
   &.success {
     border: 3px solid $success-color;
     border-radius: 5px;
-    background-color: rgba($success-color, $alert-box-opacity);
+    background-color:rgba($success-color, $alert-box-opacity);
   }
 }
 
 .form {
-  &__error {
-    color: rgba(255, 17, 5, 1);
-  }
+	
+	&__error {
+		color: rgba(255, 17, 5, 1);
+	}
 
-  &__main-page {
-    label {
-      color: $medium-gray;
-    }
+	&__main-page {
+		
+		label {
+			color: $medium-gray;
+		}
 
-    input,
-    textarea {
-      background: none;
-      color: $white;
-
-      &:focus {
-        background: $black;
-        opacity: 0.6;
-      }
-    }
-  }
+		input,
+		textarea {
+			background: none;
+			color: $white;
+		
+			&:focus {
+				background: $black;
+				opacity: .6;
+			}
+		}
+	}
 }
 
 input.error.is-invalid {
-  border-color: rgba(255, 17, 5, 1);
+	border-color: rgba(255, 17, 5, 1);
 }
 
 .invalid-feedback {
-  color: rgba(255, 17, 5, 1);
+	color: rgba(255, 17, 5, 1);
 }
 // ========== END FORM ========== //

@@ -1,58 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="ru" data-whatinput="touch" data-whatintent="mouse">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Inga Zayats">
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="{{root}}assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{{root}}assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="page">
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="author" content="Inga Zayats" />
-	<title>{{title}}</title>
-	<meta name="description" content="{{description}}" />
-	<meta name="keywords" content="{{keywords}}" />
-	<link rel="stylesheet" href="{{root}}assets/css/app.css" />
-	<link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/images/favicons/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/images/favicons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="{{root}}assets/images/favicons/favicon-16x16.png" />
-	<link rel="manifest" href="{{root}}assets/images/favicons/site.webmanifest" />
-	<link rel="mask-icon" href="{{root}}assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-	<meta name="msapplication-TileColor" content="#da532c" />
-	<meta name="theme-color" content="#ffffff" />
-</head>
+    <!-- begin mobile container -->
+    {{> top-mobile-container}}
+    <!-- end mobile container -->
 
-<body class="page">
-	<!-- begin mobile container -->
-	{{> top-mobile-container}}
-	<!-- end mobile container -->
+    <div class="off-canvas-wrapper">
+      
+      {{> off-canvas-container}}
+      
+      <div class="off-canvas-content" data-off-canvas-content>
+      
+        <!-- begin site header -->
+        {{> site-header}}
+        <!-- end site header -->
 
-	<div class="off-canvas-wrapper">
-		{{> off-canvas-container}}
+        <!-- begin site search form -->
+        {{> search-form}}
+        <!-- end site search form -->
 
-		<div class="off-canvas-content" data-off-canvas-content>
-			<!-- begin site header -->
-			{{> site-header}}
-			<!-- end site header -->
+        <div class="page__container">
+          {{> body}}
+        </div>
 
-			<!-- begin site search form -->
-			{{> search-form}}
-			<!-- end site search form -->
+        <!-- begin site footer -->
+        {{> footer}}
+        <!-- end site footer -->
 
-			<div class="page__container">{{> body}}</div>
+        {{> back-to-top}}
 
-			<!-- begin site footer -->
-			{{> footer}}
-			<!-- end site footer -->
+      </div>
+    </div>
 
-			{{> back-to-top}}
-		</div>
-	</div>
-
-	<!-- begin scripts -->
-	<script src="{{root}}assets/js/app.js"></script>
-	{{#ifpage 'portfolio-item'}}
-	<script src="{{root}}assets/js/lib/jquery.nanogallery2.min.js"></script>
-	{{/ifpage}}
-	<script src="{{root}}assets/js/lib/share.js"></script>
-	<script src="{{root}}assets/js/lib/es5-shims.min.js"></script>
-</body>
-
+    <!-- begin scripts -->
+    <script src="{{root}}assets/js/app.js"></script>
+    {{#ifpage 'portfolio-item'}}
+      <script src="{{root}}assets/js/lib/jquery.nanogallery2.min.js"></script>
+    {{/ifpage}}
+    <script src="{{root}}assets/js/lib/share.js"></script>
+    <script src="{{root}}assets/js/lib/es5-shims.min.js"></script>
+  </body>
 </html>

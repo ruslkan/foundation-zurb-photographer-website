@@ -1,52 +1,52 @@
 // ====== 5.3. BEGIN AVATAR  ====== //
 .avatar {
-  @include flex;
+	@include flex;
+	
+	&__link {
+		@include flex-align-self(middle);
+		color: $introtext-color;
 
-  &__link {
-    @include flex-align-self(middle);
-    color: $introtext-color;
+		&:hover {
+			color: $highlight;
+		}
 
-    &:hover {
-      color: $highlight;
-    }
-
-    &_color_medium-gray {
-      color: $medium-gray;
-    }
-  }
-
+			&_color_medium-gray {
+				color: $medium-gray;
+			}
+	}
+	
   &__image {
-    border-radius: 50%;
+		border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -khtml-border-radius: 50%;
-    @include breakpoint(small) {
-      height: rem-calc(50);
-      width: rem-calc(50);
-    }
-    @include breakpoint(medium) {
-      height: rem-calc(45);
-      width: rem-calc(45);
-    }
-    @include breakpoint(large) {
-      height: rem-calc(60);
-      width: rem-calc(60);
-    }
+		@include breakpoint(small) {
+    	height: rem-calc(50);
+    	width: rem-calc(50);
+  	}
+  	@include breakpoint(medium) {
+    	height: rem-calc(45);
+    	width: rem-calc(45);
+  	}
+  	@include breakpoint(large) {
+    	height: rem-calc(60);
+    	width: rem-calc(60);
+  	}
   }
 
   &__signature {
-    margin-bottom: 0;
-    @include flex-align-self(middle);
-    margin-left: rem-calc(5);
-    @include breakpoint(small) {
-      font-size: rem-calc(10);
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(12);
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(12);
-    }
-  }
+  	margin-bottom: 0;
+		@include flex-align-self(middle);
+		margin-left: rem-calc(5);
+		@include breakpoint(small) {
+			font-size: rem-calc(10);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(12);
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(12);
+		}
+	}
 }
 // ====== END AVATAR  ====== //

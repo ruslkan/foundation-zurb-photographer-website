@@ -1,26 +1,49 @@
 // ========== 6.14. BEGIN SERVICES LIST PAGE ========== //
 .services-list {
-  &__section-card {
+	
+	&__section-card {
     background-color: $black;
-  }
+	}
 
   &__section-card-headline {
     text-align: center;
     color: $light-gray;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
-      1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 5px #000;
+    text-shadow:
+      2px   0  0   #000, 
+      -2px   0  0   #000, 
+      0    2px 0   #000, 
+      0   -2px 0   #000, 
+      1px  1px 0   #000, 
+      -1px -1px 0   #000, 
+      1px -1px 0   #000, 
+      -1px  1px 0   #000,
+      1px  1px 5px #000;
     @include breakpoint(small) {
       font-size: rem-calc(42px);
-      @include position(absolute, $left: 0, $right: 0, $top: 4);
+      @include position(
+        absolute,
+        $left:0,
+        $right:0,
+        $top:4
+      );
     }
     @include breakpoint(medium) {
       font-size: rem-calc(50px);
-      @include position(absolute, $left: 0, $right: 0, $top: 4);
+      @include position(
+        absolute,
+        $left:0,
+        $right:0,
+        $top:4
+      );
     }
     @include breakpoint(large) {
       font-size: rem-calc(50px);
-      @include position(absolute, $left: 0, $right: 0, $top: 9);
+      @include position(
+        absolute,
+        $left:0,
+        $right:0,
+        $top:9
+      );
     }
   }
 
@@ -36,5 +59,5 @@
     padding-top: 0;
     margin-top: 0;
   }
-}
+} 
 // ========== END SERVICES LIST PAGE ========== //

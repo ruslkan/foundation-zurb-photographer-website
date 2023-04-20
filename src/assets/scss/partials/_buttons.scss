@@ -1,14 +1,14 @@
 // ====== 5.4. BEGIN BUTTONS  ====== //
 .button {
-  @include button-style(#0a0a0a, #565555, #fefefe);
+	@include button-style(#0A0A0A, #565555, #FEFEFE);
   @include border-radius(5px);
   border-style: solid;
   border-width: 1px;
   border-color: $white;
   letter-spacing: 1.6px;
-
-  &:hover {
-    color: #d08905;
-  }
+  
+	&:hover {
+		color: #D08905;
+	}
 }
 // ====== END BUTTONS  ====== //

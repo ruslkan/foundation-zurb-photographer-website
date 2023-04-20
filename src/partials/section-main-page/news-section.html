@@ -1,15 +1,17 @@
 <section class="section section-news" id="sectionNews" data-magellan-target="sectionNews">
-	<h3 class="section__headline section__headline_text_center">- Новости -</h3>
-	<div class="section__bg-image"
-		data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/news/news-bg.jpg, medium], [{{root}}assets/images/section/news/news-bg.jpg, large]">
-		<div class="section__card-container" data-equalizer data-equalize-by-row="true">
-			<!-- begin news card -->
-			{{#repeat 2}}
-			<div class="section__card section__card_columns_two">
-				{{> s-news-card}}
-			</div>
-			{{/repeat}}
-			<!-- end news card -->
-		</div>
-	</div>
+  <h3 class="section__headline section__headline_text_center">- Новости -</h3>
+  <div class="section__bg-image" data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/news/news-bg.jpg, medium], [{{root}}assets/images/section/news/news-bg.jpg, large]">
+    <div class="section__card-container" data-equalizer data-equalize-by-row="true">
+
+      <!-- begin news card -->
+      {{#repeat 2}}
+      <div class="section__card section__card_columns_two">
+        {{> s-news-card}}
+      </div>
+      {{/repeat}}
+      <!-- end news card -->
+          
+    </div>
+    
+  </div>
 </section>

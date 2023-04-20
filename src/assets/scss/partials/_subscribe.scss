@@ -1,46 +1,45 @@
 // ========== 5.26. BEGIN SUBSCRIBE ========== //
 .subscribe {
-  background: $subscription-form-bg;
-  margin-bottom: 10px;
+	background: $subscription-form-bg;
+	margin-bottom: 10px;
+		
+	&__headline {
+		font-family: 'Open Sans Condensed',franklingothicdemicondcRg,Arial,Helvetica Neue,Helvetica,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: $subscription-headline-color;
+		padding-top: 1rem;
+		@include xy-cell;
+		@include breakpoint(small) {
+			font-size: rem-calc(22);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(24);
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(34);
+		}
+	}
 
-  &__headline {
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, Arial,
-      Helvetica Neue, Helvetica, sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    color: $subscription-headline-color;
-    padding-top: 1rem;
-    @include xy-cell;
-    @include breakpoint(small) {
-      font-size: rem-calc(22);
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(24);
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(34);
-    }
-  }
+	&__form {
+  	background: $subscription-form-bg;
+  	color: $subscription-form-color;
+  	padding: $subscription-form-padding;
+  	border-radius: $global-radius;
+	}
 
-  &__form {
-    background: $subscription-form-bg;
-    color: $subscription-form-color;
-    padding: $subscription-form-padding;
-    border-radius: $global-radius;
-  }
-
-  &__text {
-    line-height: 1.625;
-    font-weight: 600;
-    @include breakpoint(small) {
-      font-size: rem-calc(12);
-    }
-    @include breakpoint(medium) {
-      font-size: rem-calc(12);
-    }
-    @include breakpoint(large) {
-      font-size: rem-calc(16);
-    }
-  }
+	&__text {
+		line-height: 1.625;
+		font-weight: 600;
+		@include breakpoint(small) {
+			font-size: rem-calc(12);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(12);
+		}
+		@include breakpoint(large) {
+			font-size: rem-calc(16);
+		}
+	}
 }
 // ========== END SUBSCRIBE ========== //

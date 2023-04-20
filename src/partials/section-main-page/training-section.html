@@ -1,15 +1,17 @@
 <section class="section section-training" id="sectionTraining" data-magellan-target="sectionTraining">
-	<h3 class="section__headline section__headline_text_center">- Обучение -</h3>
-	<div class="section__bg-image"
-		data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/training/training-bg.jpg, medium], [{{root}}assets/images/section/training/training-bg.jpg, large]">
-		<div class="section__card-container" data-equalizer data-equalize-by-row="true">
-			<!-- begin training group card -->
-			{{#repeat 3}}
-			<div class="section__card section__card_columns_two">
-				{{> s-training-card}}
-			</div>
-			{{/repeat}}
-			<!-- end training group card -->
-		</div>
-	</div>
+  <h3 class="section__headline section__headline_text_center">- Обучение -</h3>
+  <div class="section__bg-image" data-interchange="[{{root}}assets/images/section/bg.jpg, small], [{{root}}assets/images/section/training/training-bg.jpg, medium], [{{root}}assets/images/section/training/training-bg.jpg, large]">
+    <div class="section__card-container" data-equalizer data-equalize-by-row="true">
+
+      <!-- begin training group card -->
+      {{#repeat 3}}
+      <div class="section__card section__card_columns_two">
+        {{> s-training-card}}
+      </div>
+      {{/repeat}}
+      <!-- end training group card -->
+
+    </div>
+
+  </div>
 </section>

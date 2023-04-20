@@ -9,7 +9,7 @@ $social-button-margin: 0.15rem;
 
 // Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
 $social-brand-facebook: #3b5998;
-$social-brand-vk: #4680c2;
+$social-brand-vk: #4680C2;
 $social-brand-youtube: #bb0000;
 $social-brand-instagram: #125688;
 
@@ -17,7 +17,7 @@ $social-brand-instagram: #125688;
   background: $brand-color;
 
   &:before {
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: $brand-icon;
   }
 
@@ -31,7 +31,7 @@ $social-brand-instagram: #125688;
 
 .rounded-social-buttons {
   text-align: center;
-
+  
   .social-button {
     display: inline-block;
     position: relative;
@@ -57,12 +57,12 @@ $social-brand-instagram: #125688;
     }
 
     &.facebook {
-      @include social-button($social-brand-facebook, '\f09a');
-
+      @include social-button($social-brand-facebook, "\f09a");
+      
       &_background_none {
         background: none;
         color: $medium-gray;
-
+        
         &:hover,
         &:focus {
           color: $dark-gray;
@@ -73,12 +73,12 @@ $social-brand-instagram: #125688;
     }
 
     &.vkontakte {
-      @include social-button($social-brand-vk, '\f189');
-
+      @include social-button($social-brand-vk, "\f189");
+      
       &_background_none {
         background: none;
         color: $medium-gray;
-
+        
         &:hover,
         &:focus {
           color: $dark-gray;
@@ -89,12 +89,12 @@ $social-brand-instagram: #125688;
     }
 
     &.youtube {
-      @include social-button($social-brand-youtube, '\f167');
-
+      @include social-button($social-brand-youtube, "\f167");
+      
       &_background_none {
         background: none;
         color: $medium-gray;
-
+        
         &:hover,
         &:focus {
           color: $dark-gray;
@@ -105,12 +105,12 @@ $social-brand-instagram: #125688;
     }
 
     &.instagram {
-      @include social-button($social-brand-instagram, '\f16d');
-
+      @include social-button($social-brand-instagram, "\f16d");
+      
       &_background_none {
         background: none;
         color: $medium-gray;
-
+        
         &:hover,
         &:focus {
           color: $dark-gray;
@@ -124,30 +124,30 @@ $social-brand-instagram: #125688;
 
 // ==== Begin styles for Yandex block Share ==== //
 .ya-share2__container_size_m .ya-share2__icon {
-  width: $social-button-size !important;
-  height: $social-button-size !important;
-  background-size: $social-button-size !important;
-
-  &:hover,
-  &:focus {
-    border: $social-button-border-width solid transparent;
-  }
+    width: $social-button-size !important;
+    height: $social-button-size !important; 
+    background-size: $social-button-size !important;
+    
+    &:hover,
+    &:focus {
+      border: $social-button-border-width solid transparent;
+    }
 }
 .ya-share2__badge {
-  border-radius: $social-button-border-radius !important;
-  transition: $social-button-transition !important;
-
-  &:hover,
-  &:focus {
-    transform: rotate(360deg);
-  }
+    border-radius: $social-button-border-radius !important;
+    transition: $social-button-transition !important;
+  
+    &:hover,
+    &:focus {
+      transform: rotate(360deg);
+    }
 }
 
 .ya-share2__item_service_vkontakte .ya-share2__badge:hover {
-  background-color: $dark-gray !important;
+    background-color: $dark-gray !important;
 }
 .ya-share2__item_service_facebook .ya-share2__badge:hover {
-  background-color: $dark-gray !important;
+    background-color: $dark-gray !important;
 }
 // ==== End styles for Yandex block Share ==== //
 

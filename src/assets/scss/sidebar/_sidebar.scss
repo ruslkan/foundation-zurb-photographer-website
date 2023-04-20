@@ -2,12 +2,12 @@
 .sidebar-widget {
   border: 1px solid $medium-gray;
   margin: 10px 0;
-
+  
   &__headline {
     font-weight: 600;
     color: $dark-gray;
     text-transform: uppercase;
-    @include xy-cell;
+    @include xy-cell();
     padding-top: 0.5rem;
     @include xy-grid;
     @include breakpoint(small) {

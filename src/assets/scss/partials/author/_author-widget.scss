@@ -5,15 +5,15 @@
   border: 1px solid $medium-gray;
 
   &__title {
-    @include xy-cell;
+    @include xy-cell();
     padding-top: 0.5rem;
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, Arial,
-      Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Open Sans Condensed',franklingothicdemicondcRg,Arial,Helvetica Neue,Helvetica,sans-serif;
     color: $introtext-color;
     text-transform: uppercase;
   }
 
   &__image {
+    //@include badge;
     @include xy-cell;
     border: 1px solid $medium-gray;
   }
@@ -32,13 +32,12 @@
   }
 
   &__name {
-    font-family: 'Open Sans Condensed', franklingothicdemicondcRg, Arial,
-      Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'Open Sans Condensed',franklingothicdemicondcRg,Arial,Helvetica Neue,Helvetica,sans-serif;
     text-align: left;
     @include clearfix;
     color: $introtext-color;
-
-    &::after {
+    
+     &::after {
       position: relative;
       width: 5rem;
       border-bottom: 0.125rem solid $primary-color;
@@ -60,7 +59,7 @@
     padding-top: 0;
     padding-bottom: 0;
     line-height: 1.25;
-    opacity: 0.9;
+    opacity: 0.9; 
   }
 }
 // ====== END AUTHOR WIDGET ====== //
