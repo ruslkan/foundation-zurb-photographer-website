@@ -20,22 +20,6 @@ To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (Version 8 or greater recommended, tested with 8.11.4 and 14.15.0)
 - [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Now cd to your project name and to start your project run:
-
-```bash
-foundation watch
-```
-
 ### Manual Setup
 
 Then open the folder in your command line, and install the needed dependencies:
