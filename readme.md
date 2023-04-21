@@ -1,6 +1,6 @@
 # Photographer's personal website
 
-Demo: https://ruslkan.github.io/photographer/
+Demo: https://ruslkan.github.io/foundation-zurb-photographer-website/
 
 The template has a Gulp-based build system with the following features:
 

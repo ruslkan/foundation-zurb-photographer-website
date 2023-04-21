@@ -14,6 +14,20 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
+// import ghpages       from 'gh-pages';
+
+// GitHub Pages
+// ghpages.publish('dist', function(err) {});
+const ghPages = require('gh-pages');
+const path = require('path');
+// ghpages.publish('dist', callback);
+
+/**
+ * This task pushes to the `gh-pages` branch of the configured `repo`.
+ */
+ghPages.publish('dist', {
+  branch: 'gh-pages'
+}, callback);
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
