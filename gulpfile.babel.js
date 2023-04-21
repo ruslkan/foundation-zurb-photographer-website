@@ -14,20 +14,13 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
-// import ghpages       from 'gh-pages';
+import ghPages       from 'gh-pages';
 
-// GitHub Pages
-// ghpages.publish('dist', function(err) {});
-const ghPages = require('gh-pages');
-const path = require('path');
-// ghpages.publish('dist', callback);
-
-/**
- * This task pushes to the `gh-pages` branch of the configured `repo`.
- */
-ghPages.publish('dist', {
-  branch: 'gh-pages'
-}, callback);
+// Deploy in GitHub Pages
+gulp.task('deploy', function() {
+	return gulp.src('./dist/**/*')
+		.pipe(ghPages());
+})
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -46,7 +39,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, fonts, copy), sass, styleGuide));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, libs, fonts, copy), sass, styleGuide));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -178,6 +171,12 @@ function reload(done) {
 function fonts() {
   return gulp.src(PATHS.fonts)
     .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
+}
+
+// Copy javascript libs to the "dist" folder
+function libs() {
+  return gulp.src(PATHS.libs)
+    .pipe(gulp.dest(PATHS.dist + '/assets/js/lib'));
 }
 
 // Watch for changes to static assets, pages, Sass, and JavaScript

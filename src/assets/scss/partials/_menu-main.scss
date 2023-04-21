@@ -1,21 +1,9 @@
 // ========== 5.13. BEGIN MENU MAIN ========== //
-.menu {
-
-  a {
-    &:hover {
-      color: rgba(133, 130, 130, 1);
-    }
-    &:focus {
-      color: rgba(221, 145, 4, 0.95);
-    }
-  }
-}
-
 .menu-main {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-family: $main-menu-font-family;
-  
+
   &__link {
     color: rgba(199, 195, 195, 0.95);
     transition: color 0.15s ease-in;
@@ -34,17 +22,18 @@
       font-size: rem-calc(18);
       letter-spacing: rem-calc(2);
     }
-    
+
     &:hover {
-      color: rgba(133, 130, 130, 1);
+      //color: rgba(133, 130, 130, 1);
+			color:rgba(221, 145, 4, 0.95);
     }
 
     &:active {
       color: rgba(221, 145, 4, 0.95);
     }
 
-    &:current {
-      color: rgba(221, 145, 4, 0.95);
+		&:focus {
+      color: rgba(199, 195, 195, 0.95);;
     }
 
     &.is-active {

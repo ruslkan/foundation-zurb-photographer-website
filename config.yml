@@ -24,11 +24,13 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    # - "!src/assets/{images,js,scss,fonts}/*"
     - "!src/assets/{img,js,scss}{,/**/*}"
+  # Paths to assets fonts
   fonts:
-   - "src/assets/fonts/*"
-   - "node_modules/font-awesome/fonts/*"
+    - "node_modules/font-awesome/fonts/*"
+  # Paths to assets javascript libs
+  libs:
+    - "src/assets/js/lib/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"

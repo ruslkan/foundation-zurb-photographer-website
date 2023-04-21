@@ -24,11 +24,11 @@
     <!-- end mobile container -->
 
     <div class="off-canvas-wrapper">
-      
+
       {{> off-canvas-container}}
-      
+
       <div class="off-canvas-content" data-off-canvas-content>
-      
+
         <!-- begin site header -->
         {{> site-header}}
         <!-- end site header -->
@@ -50,12 +50,13 @@
       </div>
     </div>
 
-    <!-- begin scripts -->
-    <script src="{{root}}assets/js/app.js"></script>
-    {{#ifpage 'portfolio-item'}}
-      <script src="{{root}}assets/js/lib/jquery.nanogallery2.min.js"></script>
-    {{/ifpage}}
-    <script src="{{root}}assets/js/lib/share.js"></script>
-    <script src="{{root}}assets/js/lib/es5-shims.min.js"></script>
+   <!-- begin scripts -->
+	 <script src="{{root}}assets/js/app.js"></script>
+	 {{#ifpage 'portfolio-item'}}
+		 <script src="{{root}}assets/js/lib/jquery.nanogallery2.min.js"></script>
+	 {{/ifpage}}
+	 <script src="{{root}}assets/js/lib/share.js"></script>
+	 <script src="{{root}}assets/js/lib/es5-shims.min.js"></script>
+
   </body>
 </html>

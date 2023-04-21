@@ -17,8 +17,10 @@ The template has a Gulp-based build system with the following features:
 
 To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (Version 8 or greater recommended, tested with 8.11.4 and 14.15.0)
+- [NodeJS](https://nodejs.org/en/) (Version 8 or greater recommended, tested with 8.11.4 - 14.15.0)
 - [Git](https://git-scm.com/)
+
+With an easy to understand syntax and consistent structure, you'll learn your way around Foundation in no time! (https://get.foundation/sites/docs/)
 
 ### Manual Setup
 

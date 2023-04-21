@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gulp build && gh-pages -d dist"
   },
   "author": "Ruslan Kanashuk",
   "license": "MIT",
@@ -47,7 +47,7 @@
     "panini": "^1.3.0",
     "rimraf": "^2.7.1",
     "style-sherpa": "^1.0.0",
-    "uncss": "^0.16.2",
+    "uncss": "^0.17.3",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1",
@@ -55,10 +55,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruslkan/photographer.git"
+    "url": "https://github.com/ruslkan/foundation-zurb-photographer-website.git"
   },
   "bugs": {
-    "url": "https://github.com/ruslkan/photographer/issues",
+    "url": "https://github.com/ruslkan/foundation-zurb-photographer-website/issues",
     "email": "ruslan.kanashuk@gmail.com"
   },
   "private": true
