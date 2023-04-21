@@ -24,6 +24,12 @@ With an easy to understand syntax and consistent structure, you'll learn your wa
 
 ### Manual Setup
 
+To manually set up the template, first download it with Git:
+
+```bash
+git clone https://github.com/ruslkan/foundation-zurb-photographer-website projectname
+```
+
 Then open the folder in your command line, and install the needed dependencies:
 
 ```bash
